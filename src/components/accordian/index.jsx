@@ -18,8 +18,8 @@ export default function Accordian() {
   }
 
   function handleMultiSelection(getCurrentId) {
+    setSelected(null);
     let cpyMultiple = [...multiple];
-
     const findIndexOfCurrentId = cpyMultiple.indexOf(getCurrentId);
 
     console.log(findIndexOfCurrentId);
@@ -33,10 +33,20 @@ export default function Accordian() {
   }
   return (
     <div className="wrapper">
-      <button onClick = {()=> setMultiple([]) && setSelected(null) && setEnableMultiSelection(false)} className="button">SingleSelect</button>
       <button
-        onClick={() => setEnableMultiSelection(true) && setSelected(null) && setMultiple([])}
-        className="button"      >
+        onClick={() =>
+          setMultiple([]) && setSelected(null) && setEnableMultiSelection(false)
+        }
+        className="button"
+      >
+        SingleSelect
+      </button>
+      <button
+        onClick={() =>
+          setEnableMultiSelection(true) && setSelected(null) && setMultiple([])
+        }
+        className="button"
+      >
         MultiSelect
       </button>
       <div className="accordian">
@@ -54,7 +64,8 @@ export default function Accordian() {
                 <h3>{dataItem.question}</h3>
                 {/* <span>+</span> */}
               </div>
-              {selected === dataItem.id || multiple.indexOf(dataItem.id) !== -1 ? (
+              {selected === dataItem.id ||
+              multiple.indexOf(dataItem.id) !== -1 ? (
                 <div className="content"> {dataItem.answer}</div>
               ) : null}
             </div>
