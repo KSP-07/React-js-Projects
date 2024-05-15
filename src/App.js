@@ -1,4 +1,5 @@
 import "./App.css";
+import LightSwitch from "./components/Mode-Switch";
 import Accordian from "./components/accordian";
 import ImageSlider from "./components/image-slider";
 import LoadMoreData from "./components/load-more-data";
@@ -21,7 +22,10 @@ function App() {
       {/* <TreeView menus={menus} /> */}
 
       {/* qr code generator */}
-      <QrCode />
+      {/* <QrCode /> */}
+
+      {/* theme switch */}
+      <LightSwitch/>
     </div>
   );
 }
