@@ -1,10 +1,12 @@
 import "./App.css";
 import LightSwitch from "./components/Mode-Switch";
 import Accordian from "./components/accordian";
+import TabTest from "./components/custom-tabs/tab-test";
 import ImageSlider from "./components/image-slider";
 import LoadMoreData from "./components/load-more-data";
 import QrCode from "./components/qr-code generator";
 import RandomColor from "./components/random-color";
+import ScrollBar from "./components/scroll-indicator";
 import StarRating from "./components/star-rating";
 import TreeView from "./components/tree-view";
 import menus from "./components/tree-view/data";
@@ -25,7 +27,12 @@ function App() {
       {/* <QrCode /> */}
 
       {/* theme switch */}
-      <LightSwitch/>
+      {/* <LightSwitch/> */}
+
+      {/* scroll percentage indicator */}
+      {/* <ScrollBar url={'https://dummyjson.com/products?limit = 100'}/> */}
+      {/* custom tab function */}
+      <TabTest/>
     </div>
   );
 }
