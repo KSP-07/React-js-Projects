@@ -1,6 +1,7 @@
 import "./App.css";
 import LightSwitch from "./components/Mode-Switch";
 import Accordian from "./components/accordian";
+import ModalTest from "./components/custom-modal-popup/modal-test";
 import TabTest from "./components/custom-tabs/tab-test";
 import ImageSlider from "./components/image-slider";
 import LoadMoreData from "./components/load-more-data";
@@ -32,7 +33,10 @@ function App() {
       {/* scroll percentage indicator */}
       {/* <ScrollBar url={'https://dummyjson.com/products?limit = 100'}/> */}
       {/* custom tab function */}
-      <TabTest/>
+      {/* <TabTest/> */}
+
+      {/* custom popup */}
+      <ModalTest/>
     </div>
   );
 }
