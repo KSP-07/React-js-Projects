@@ -9,6 +9,7 @@ import LoadMoreData from "./components/load-more-data";
 import QrCode from "./components/qr-code generator";
 import RandomColor from "./components/random-color";
 import ScrollBar from "./components/scroll-indicator";
+import SearchAutoComplete from "./components/search-autocomplete-usingApi";
 import StarRating from "./components/star-rating";
 import TreeView from "./components/tree-view";
 import menus from "./components/tree-view/data";
@@ -40,7 +41,10 @@ function App() {
       {/* <ModalTest/> */}
 
       {/* Gtihub data fetch */}
-      <GithubProfileFinder/>
+      {/* <GithubProfileFinder/> */}
+
+      {/* search autocomplete */}
+      <SearchAutoComplete/>
     </div>
   );
 }
